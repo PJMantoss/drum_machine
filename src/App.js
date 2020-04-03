@@ -92,8 +92,23 @@ class App extends Component {
         <div className="controls-container">
           <div className="control">
             <span>Power</span>
-            <div className="" onClick={this.powerControl}>
-              <div/>
+            <div className="select" onClick={this.powerControl}>
+              <div style={powerSlider} className="inner" />
+            </div>
+
+            <p id="display">
+              {this.state.display}
+            </p>
+
+            <div className="volume-slider">
+              <input 
+                  type="range" 
+                  min="0" 
+                  max="1" 
+                  value={this.state.sliderValue} 
+                  step="0.01" 
+                  onChange={this.adjustVolume} 
+              />
             </div>
           </div>
         </div>
