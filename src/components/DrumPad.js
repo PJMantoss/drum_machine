@@ -14,6 +14,13 @@ const inactiveStyle = {
 }
 
 export class DrumPad extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            padStyle: inactiveStyle
+        };
+    }
+
     render() {
         return (
             <div>
