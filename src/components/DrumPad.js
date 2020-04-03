@@ -7,7 +7,11 @@ const activeStyle = {
     marginTop: 13
 }
 
-const inactiveStyle = {}
+const inactiveStyle = {
+    backgroundColor: "orange",
+    boxShadow: "0 3px orange",
+    marginTop: 13
+}
 
 export class DrumPad extends Component {
     render() {

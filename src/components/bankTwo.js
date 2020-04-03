@@ -43,6 +43,6 @@ const bankTwo = [{
     keyTrigger: 'C',
     id: "Snare",
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
-},]
+}]
 
 export default bankTwo;
