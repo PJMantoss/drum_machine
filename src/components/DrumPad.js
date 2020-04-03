@@ -18,8 +18,12 @@ export class DrumPad extends Component {
         super(props);
         this.state = {
             padStyle: inactiveStyle
-        };
+        }
     }
+
+    componentDidMount(){}
+
+    componentWillUnmount(){}
 
     render() {
         return (
