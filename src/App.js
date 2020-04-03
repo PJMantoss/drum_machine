@@ -109,6 +109,13 @@ class App extends Component {
                   step="0.01" 
                   onChange={this.adjustVolume} 
               />
+
+              <div className="control">
+                <span>Bank</span>
+                <div onClick={this.selectBank} className="select">
+                  <div style={bankSlider} className="inner" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
