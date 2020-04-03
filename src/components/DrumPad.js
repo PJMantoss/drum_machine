@@ -58,11 +58,24 @@ export class DrumPad extends Component {
         }
     }
 
-    playSound = e => {}
+    playSound = e => {
+        const sound = document.getElementById(this.props.keyTrigger);
+        sound.currentTime = 0;
+        sound.play();
+        this.activatePad();
+        setTimeout(() => this.activatePad(), 100);
+        this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
+    }
 
     render() {
+    
         return (
-            <div>
+            <div 
+                id="" 
+                onClick="" 
+                className="" 
+                style={}
+            >
                 
             </div>
         )
