@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PadBank from "./components/PadBank";
 import bankTwo from './components/bankTwo';
+import PadBank from './components/PadBank';
 
 class App extends Component {
   constructor(props){
@@ -36,16 +38,51 @@ class App extends Component {
     }
   }
 
-  displayClipName = () => {}
+  displayClipName = name => {
+    if(this.state.power){
+      this.setState({
+        display: name
+      })
+    }
+  }
 
-  adjustVolume = () => {}
+  adjustVolume = e => {
+    if (this.state.power){
+      this.setState({
+        sliderVal: e.target.value,
+        display: "Volume " + Math.round(e.target.value * 100)
+      })
+      setTimeout(() => this.clearDisplay(), 1000)
+    }
+  }
 
-  clearDisplay = () => {}
+  clearDisplay = () => {
+    this.setState({
+      display: String.fromCharCode(160)
+    })
+  }
 
   render() {
+    const powerSlider = this.state.power ? {
+      float: 'right'
+    } : {
+      float: 'left'
+    };
+
+    const bankSlider = this.state.currentPadBank === bankOne ? {
+      float: 'left'
+    } : {
+      float: 'right'
+    }; {
+      const clips = [].slice.call(document.getElementsByClassName("clip"));
+      clips.forEach(sound => {
+        sound.volume = this.state.sliderVal
+      })
+    }
+
     return (
-      <div className="App">
-        
+      <div id="drum-machine" className="inner-container">
+        <PadBank />
       </div>
     );
   }
