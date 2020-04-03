@@ -35,8 +35,8 @@ export class PadBank extends Component {
         })
 
         return (
-            <div>
-                
+            <div className="pad-bank">
+                {padBank}
             </div>
         )
     }
