@@ -38,4 +38,11 @@ const bankOne = [{
     keyTrigger: 'X',
     id: "Kick",
     url: 'https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3'
-},{},]
+},{
+    keyCode: 67,
+    keyTrigger: 'C',
+    id: "Closed-HH",
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3'
+},]
+
+export default bankOne;
