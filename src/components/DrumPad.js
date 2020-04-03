@@ -8,9 +8,9 @@ const activeStyle = {
 }
 
 const inactiveStyle = {
-    backgroundColor: "orange",
-    boxShadow: "0 3px orange",
-    marginTop: 13
+    backgroundColor: "grey",
+    boxShadow: "3px 3px 3px 5px black",
+    marginTop: 10
 }
 
 export class DrumPad extends Component {
