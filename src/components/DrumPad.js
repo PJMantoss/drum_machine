@@ -21,9 +21,19 @@ export class DrumPad extends Component {
         }
     }
 
-    componentDidMount(){}
+    componentDidMount(){
+        document.addEventListener("keydown", this.handleKeyPress);
+    }
 
-    componentWillUnmount(){}
+    componentWillUnmount(){
+        document.removeEventListener("keydown", this.handleKeyPress);
+    }
+
+    handleKeyPress = e => {}
+
+    activatePad = () => {}
+
+    playSound = e => {}
 
     render() {
         return (
