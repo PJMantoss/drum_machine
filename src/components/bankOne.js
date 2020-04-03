@@ -28,4 +28,14 @@ const bankOne = [{
     keyTrigger: 'D',
     id: 'Open-HH',
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3'
-},{},{},{},]
+},{
+    keyCode: 90,
+    keyTrigger: 'Z',
+    id: "Kick-n'-Hat",
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3'
+},{
+    keyCode: 88,
+    keyTrigger: 'X',
+    id: "Kick",
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3'
+},{},]
