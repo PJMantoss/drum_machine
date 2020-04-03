@@ -88,6 +88,15 @@ class App extends Component {
             clipVolume={this.state.sliderVal} 
             currentPadBank={this.state.currentPadBank} 
         />
+
+        <div className="controls-container">
+          <div className="control">
+            <span>Power</span>
+            <div className="" onClick={this.powerControl}>
+              <div/>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
