@@ -82,7 +82,12 @@ class App extends Component {
 
     return (
       <div id="drum-machine" className="inner-container">
-        <PadBank />
+        <PadBank 
+            power={this.state.power} 
+            updateDisplay={this.displayClipName} 
+            clipVolume={this.state.sliderVal} 
+            currentPadBank={this.state.currentPadBank} 
+        />
       </div>
     );
   }
