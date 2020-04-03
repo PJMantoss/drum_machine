@@ -37,14 +37,14 @@ export class DrumPad extends Component {
 
     activatePad = () => {
         if (this.props.power){
-            this.state.padStyle.backgroundColor == "orange" ?
+            this.state.padStyle.backgroundColor === "orange" ?
             this.setState({
                 padStyle: inactiveStyle
             }) : this.setState({
                 padStyle: activeStyle
             })
         } else {
-            this.state.padStyle.marginTop == 13 ?
+            this.state.padStyle.marginTop === 13 ?
             this.setState({
                 padStyle: inactiveStyle
             }) : this.setState({

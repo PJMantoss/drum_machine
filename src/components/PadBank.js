@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import DrumPad from "./components/DrumBeat"
+import DrumPad from "./DrumPad"
 
 export class PadBank extends Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
         let padBank;
         this.props.power ? 
