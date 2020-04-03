@@ -71,12 +71,13 @@ export class DrumPad extends Component {
     
         return (
             <div 
-                id="" 
-                onClick="" 
-                className="" 
-                style={}
+                id={this.props.clipId} 
+                onClick={this.playSound} 
+                className="drum-pad" 
+                style={this.state.padStyle}
             >
-                
+                <audio className="clip" id={this.props.keyTrigger} src={this.props.clip}></audio>
+                {this.props.keyTrigger}
             </div>
         )
     }
