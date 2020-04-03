@@ -29,9 +29,22 @@ export class DrumPad extends Component {
         document.removeEventListener("keydown", this.handleKeyPress);
     }
 
-    handleKeyPress = e => {}
+    handleKeyPress = e => {
+        if (e.keyCode === this.props.keyCode){
+            this.playSound();
+        }
+    }
 
-    activatePad = () => {}
+    activatePad = () => {
+        if (this.props.power){
+            this.state.padStyle.backgroundColor == "orange" ?
+            this.setState({
+                padStyle: inactiveStyle
+            }) : this.setState({
+                padStyle: activeStyle
+            })
+        }
+    }
 
     playSound = e => {}
 
