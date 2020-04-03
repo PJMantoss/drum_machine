@@ -43,6 +43,18 @@ export class DrumPad extends Component {
             }) : this.setState({
                 padStyle: activeStyle
             })
+        } else {
+            this.state.padStyle.marginTop == 13 ?
+            this.setState({
+                padStyle: inactiveStyle
+            }) : this.setState({
+                padStyle: {
+                    height: 77,
+                    marginTop: 13,
+                    backgroundColor: "grey",
+                    boxShadow: "0 3px grey"
+                }
+            })
         }
     }
 
