@@ -39,6 +39,16 @@ audio {
   vertical-align: top;
 }
 
+p, span {
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Acme';
+    font-weight: 600;
+}
+
 .inner-container .controls-container .control {
   width: 100px;
   margin: auto;
@@ -64,13 +74,10 @@ audio {
   cursor: pointer;
 }
 
-p, span {
-    display: block;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: 'Acme';
-    font-weight: 600;
+.controls-container #display {
+  background: gray;
+  box-sizing: border-box;
+  margin: 15px auto;
+  padding: 15px;
+  width: 200px;
 }
-

@@ -89,10 +89,12 @@ class App extends Component {
         />
 
         <div className="controls-container">
-          <div className="control">
-            <span>Power</span>
-            <div className="select" onClick={this.powerControl}>
-              <div style={powerSlider} className="inner" />
+          
+            <div className="control">
+                <span>Power</span>
+                <div className="select" onClick={this.powerControl}>
+                  <div style={powerSlider} className="inner" />
+                </div>
             </div>
 
             <p id="display">
@@ -116,7 +118,7 @@ class App extends Component {
                 </div>
               </div>
             </div>
-          </div>
+        
         </div>
       </div>
     );
