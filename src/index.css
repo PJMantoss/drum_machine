@@ -2,4 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #8d8d8d;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 471px;
 }
