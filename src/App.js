@@ -3,6 +3,7 @@ import './App.css';
 import PadBank from "./components/PadBank";
 import bankOne from "./components/bankOne"
 import bankTwo from './components/bankTwo';
+import ReactFCCtest from "react-fcctest";
 
 class App extends Component {
   constructor(props){
@@ -120,6 +121,7 @@ class App extends Component {
             </div>
         
         </div>
+        <ReactFCCtest/>
       </div>
     );
   }
