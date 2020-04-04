@@ -3,4 +3,17 @@
   outline: 5px solid yellow;
   text-align: center;
   background: #b3b3b3;
+  width: 660px;
+}
+
+.inner-container .pad-bank .drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
