@@ -81,3 +81,7 @@ p, span {
   padding: 15px;
   width: 200px;
 }
+
+.controls-container #volume-slider {
+  display: block;
+}
