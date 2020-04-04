@@ -9,7 +9,7 @@ const activeStyle = {
 
 const inactiveStyle = {
     backgroundColor: "grey",
-    boxShadow: "3px 3px 3px 5px black",
+    boxShadow: "3px 3px 5px black",
     marginTop: 10
 }
 
