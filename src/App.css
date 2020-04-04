@@ -85,3 +85,8 @@ p, span {
 .controls-container #volume-slider {
   display: block;
 }
+
+[type=range]{
+  margin: 12.5px 0;
+  width: 100%;
+}
