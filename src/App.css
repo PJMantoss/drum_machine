@@ -24,6 +24,9 @@
   padding-top: 35px;
   box-sizing: border-box;
   cursor: pointer;
+  font-family: 'Acme';
+  font-size: 18px;
+  font-weight: 600;
 }
 
 audio {
