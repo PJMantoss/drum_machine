@@ -1,9 +1,9 @@
 #drum-machine {
   display: block;
   position: relative;
-  outline: 5px solid yellow;
+  outline: 5px solid orange;
   text-align: center;
-  background: #b3b3b3;
+  background: rgb(175, 4, 175);
   width: 660px;
 }
 
@@ -15,6 +15,8 @@
 }
 
 .inner-container .pad-bank .drum-pad {
+  background-color: rgb(94, 1, 94);
+  color: white;
   position: relative;
   float: left;
   width: 100px;
@@ -78,7 +80,7 @@ p, span {
 }
 
 .controls-container #display {
-  background: gray;
+  background: rgb(117, 2, 117);
   box-sizing: border-box;
   margin: 15px auto;
   padding: 15px;
